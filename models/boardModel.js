@@ -4,7 +4,7 @@ const boardSchema = new mongoose.Schema(
   {
     // _id: ObjectId,
     name: { type: String },
-    tasks: [{ type: ObjectId, ref: 'tasks' }],
+    tasks: [{ type: String, ref: 'tasks' }],
   },
   {
     versionKey: false,
